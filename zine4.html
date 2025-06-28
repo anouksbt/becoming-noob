@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#4 e./i.nter^_^faces</title>
+    <link href="style-C.css" rel="stylesheet">
+</head>
+<body>
+
+
+<!--cover-->
+<section class="page" id="zine-D">
+  <!--extra-->
+
+    <div class="general">
+      <!--header-->
+
+      <div class="header">
+       
+        <p class="logo">becomingnoob.com</p>
+       
+        <h1 id="second">#4 the terminal</h1>
+        <h1 id="sub-h1">text-scraping and editing</h1>
+             <pre>
+      ||                                          || 
+      ||          ||              ||    ||               ||      
+||   ||          ||                         ||    ||    ||      ||    ||    ||    ||
+||   ||    ||          ||          ||          ||    ||      ||    ||          ||
+||   ||    ||    ||    ||    ||    ||    ||                  ||    ||    ||    ||
+||   ||                                                                              ||
+||                                                                                   
+||                                                                              
+||                                       
+||               ||    ||          ||    ||      
+||   ||    ||    ||    ||    ||    ||    ||            
+||   ||    ||    || a  || series   || of || zines    ||    
+||   ||    ||    ||    ||    ||    ||    ||    ||    ||    ||      ||    ||          ||
+|| inputs  ||     <--      ||      <--   ||       <--    ||      <--     ||  inputs  ||
+||         ||   hardwares  ||       OS   ||  softwares ||    users ||      ||
+|| outputs ||      -->     ||       -->  ||    -->     ||       -->  ||  outputs ||  ||
+||   ||    ||    ||    ||    ||    ||    ||    ||    ||    ||      ||
+||   ||    ||  the graphic designer practice deconstructed to its rawer shape    ||  ||
+        </pre>
+        
+      </div>
+    
+
+
+      <!--image / illu-->
+      <div class="intro">
+        <div class="container-5">
+          <img class="object-1" src="img/dessin5.svg">
+          <figcaption>"web harvesting"</figcaption>
+          </div>
+  
+      </div>
+
+
+      <!--context-->
+      <div class="context">
+         <p class="big">Welcome !</p>
+          <p>
+              
+Text-editing in the terminal <strong>challenges traditional ways to treat text</strong> on a white A4 canvas. The terminal can be used for scraping content from the web as much as automating text layout into patterns. The methodologies presented in this zine, stand as <strong> an introduction to alternative editing techniques.</strong> Because, disclaimer, the very best way to layout text without DTP softwares (adobe, etc) is by using mark-up language such as HTML styled with CSS, programming languages built for web editing. These require a deeper learning of these languages, which can't be achieved from these zines. <br><br>
+This zine #4 will bring you to a funny <strong>web-scraping</strong> introduction, followed by two ways of <strong>automating the editing of the text.</strong> At the end, a bonus introduces you to vim a command-line-based text-editor !!! expert level ;)
+
+          </p>
+      </div>
+
+    </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page11 notes-->
+<section class="page" id="zine-D">
+  <div class="general-3">
+    <div id="chap1">
+      <h4>notes</h4>
+    </div>
+    <div id="chap2"></div>
+  </div>
+  <div class="pagefoot"></div>
+</section>
+
+<!--page3 wikpedia scraping-->
+<section class="page" id="zine-D">
+  <div class="general-3">
+    <div id="chap3">
+      <div>
+        <h5>in practice</h5>
+          <h4>#1 web scraping</h4>
+          <p>Web scraping or web harvesting is <strong>the automation of the structured data extraction process from websites.</strong></p>
+          <p>An interesting way to get introduce to web scraping, is to use <strong>a Python Library which will extract content from wikipedia pages.</strong> The first step is to install the library.</p>
+      </div>
+      <div>
+                <p>-> to understand better the system of packages in the terminal, you can refer to the zine #3, page 4. </p>
+      </div>
+
+          <p class="border">
+            ->In 1989, Tim Berners-Lee, a British scientist conceived <strong>the World Wide Web.</strong> The static informations were displayed in html, which made it easy for developers to write scripts that could extract data programmatically. But the evolution of the web with dynamic websites challenged the traditional scraping techniques. Expensive dedicated software has been developed, now pushed further for the building of machine-learning training datasets.<br><br>
+In its essence web scraping is illegal. But no regulations are binding; results of court cases have proved that web scraping legacy is a case-by-case matter. Web scraping often involves <strong>screen-scraping,</strong> which is <strong>the collection of pre-rendered information from the front end.</strong> This activity won't affect a website's technical angle. Plus, data scraped this way are often unprotected, and anyone can collect them.<br>So for an individual practice, <strong>space still exists for a bit of scrapping. </strong>
+          </p>
+        
+       
+        </div>
+
+    <div id="chap-win2">
+      
+      <div>
+        <h4>for Macos</h4>
+
+      <!--homebrew-->
+        <p><strong>Homebrew</strong>, the macos package manager :<p>
+        <p>To install it, simply open a terminal window and run :</p>
+        <p class="casca">/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/<br>Homebrew/install/HEAD/install.sh)"</p>
+        <p>/!\ if an error occurs after that, <strong>read what the terminal indicates you to do</strong> -> there is often a text to copy / or the computer password to fill in</p>
+        <!--python--><hr>
+        <p><strong>Python</strong></p>
+        <p class="casca">brew install python</p>
+        <p>To check the version installed, run :</p>
+        <p class="casca">python3 --version</p>
+      <!--wikipedia--><hr>
+        <p><strong>wikipedia</strong></p>
+        <p class="casca">brew install wikipedia</p>
+        </div>
+        <div>
+        <h4>for Windows</h4>
+      <!--python--> 
+        
+        <p><strong>Python</strong> should already be installed. Verify by :</p>
+        <p class="casca">python3 --version</p>
+        <p>Then check if pip is installed : </p>
+        <p class="casca">pip --version</p>
+        <p>if Pip is not installed type :</p>
+        <p class="casca">python get-pip.py</p>
+        <!--wikipedia--><hr>
+        <p><strong>wikipedia</strong></p>
+        <p class="casca">pip install wikipedia</p>
+      </div>
+      
+    </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page3 wikpedia scraping-->
+<section class="page" id="zine-D">
+  <div class="general-3">
+    <div id="chap1">
+        <h5>in pratice</h5>
+        <h4>extract a summary</h4>
+        <p>/!\ an internet connection is required</p>
+        <p><strong>1. Extract the summary of a wikipedia web page</strong> </p>
+        <p>- Open a terminal window</p>
+        <p>- Open a python window by typing (depending of the version installed)</p>
+        <p class="casca">python OR python3</p>
+        <p>- Call the wikipedia package</p>
+        <p class="casca">import wikipedia</p>
+        <p>- Press enter, and ask for the summary </p>
+        <p class="casca">print(wikipedia.summary("piracy"))</p>
+        <p>Here it is ! A full summary of the webpage is displayed ! </p>
+        <p class="result">"Piracy is an act of robbery or criminal violence by ship or boat-borne attackers upon another ship or a coastal area, typically with the goal of stealing cargo and other valuable goods. Those who conduct acts of piracy are called pirates, and vessels used for piracy are called pirate ships. The earliest documented instances of piracy were in the 14th century BC, when the Sea Peoples, a group of ocean raiders, attacked the ships of the Aegean and Mediterranean civilisations. [...]" </p>
+        <p>-> It mainly gives the first sentences of the webpage.</p>
+        <br><hr>
+        <p><strong>2. Select the number of sentences</strong> to make it shorter :</p>
+        <p class="casca">print(wikipedia.summary("piracy", sentences=2))</p>
+        <p class="result">"Piracy is an act of robbery or criminal violence by ship or boat-borne attackers upon another ship or a coastal area, typically with the goal of stealing cargo and valuable goods, or taking hostages. Those who conduct acts of piracy are called pirates, and vessels used for piracy are called pirate ships."</p>
+                </div>
+
+        <div id="chap2">
+          <div class="container-5">
+          <img class="object-1" src="img/Flag_of_Edward_England.svg">
+          <figcaption>first illustration of the "Piracy" wikipedia page : "The traditional "Jolly Roger" flag of piracy"</figcaption>
+          </div>
+        <div>
+        </div>
+        </div>
+
+    
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page4 wikipedia scraping list result-->
+<section class="page" id="zine-D">
+  <div class="general-3">
+    <div id="chap1">
+                <h5>in practice</h5>
+          <h4>browse pages from a keyword</h4>
+          <p>Keywords, like "piracy", can refer to many pages. By asking the summary, the library decides to display the most obvious one. But, we can first <strong>search the different pages in which our keyword is mentionned,</strong> to then focus on the one we are interesting in. </p>
+          <p><strong>1. List of results by keywords :</strong></p>
+          <p class="casca">result = wikipedia.search("piracy")<br>
+            print(result)</p>
+          <p class="result">['Piracy', 'Copyright infringement', 'Piracy off the coast of Somalia', 'Online piracy', 'Golden Age of Piracy', 'Piracy in the Caribbean', 'Piracy in the 21st century', 'Anti-piracy', 'Pirate (disambiguation)', '1680s in piracy']</p>
+          <p class="border">The results are displayed in <strong>a list []</strong>. Each results is <strong>indexed by a number,</strong> starting from 0.<br>
+          result[0] : "Piracy"<br>
+          result[1] : "Copyright infringement"<br>
+          result[7] : "Anti-piracy"</p>
+          <br> <hr>
+          <p><strong>2. Summary of a result</strong> : let's use the commands seen previously to display the result of 'Online Privacy' :</p>
+          <p class="casca">print(wikipedia.summary(result[3], sentences=4))</p>
+          <p class="result">"Online piracy or software piracy is the practice of downloading and distributing copyrighted works digitally without permission, such as music, movies or software.<br>
+            == History ==<br>
+            Nathan Fisk traces the origins of modern online piracy back to similar problems posed by the advent of the printing press. Quoting from legal standards in MGM Studios, Inc. v."</p>  
+        
+    </div>
+    <div id="chap-win">
+      <div>
+        <p><strong> ->test it on different themes and webpages !</strong></p>
+        <p>-> to leave Python writing mode tap Ctrl+Z on windows, and Ctrl+S on mac. </p>
+          </div>
+        </div>
+    </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+
+<!--page5 text editing beginner-->
+<section class="page" id="zine-D">
+  <div class="general-3">
+    <div id="chap1">
+      <h5>into practice - beginner</h5>
+      <h4>#2 text-editing</h4>
+      <p>Once this text is copied, let's try to edit it in a poster ! For this, open a new terminal window and type :</p>
+      <p><strong>1. Install dependancies</strong></p>
+      <p class="casca">pip install asciiwriter</p>
+      <p class="casca">pip install argparse</p>
+      <hr>
+      <p><strong>2. Download the script</strong></p>
+      <p>- Get on <a href="http://www.becomingnoob.com/">becomingnoob.com</a></p>
+      <p>- Open the door, and click on "workshop", download the document called "text_lines.py"</p>
+      <p>- Place it in your desktop, then type</p>
+      <p class="casca">cd Desktop</p>
+      <hr>
+      <p><strong>3. Run the command</strong></p>
+      <p>- To achieve the following effect, run this command</p>
+      <p class="casca">python text_lines.py "Becoming A Noob"</p>
+      <p>The result should be displayed in the terminal !</p>
+      <hr>
+      <p><strong>4. Adapt the variables</strong></p>
+      <p>- Download a text editor : Visual Studio Code or Sublime text</p>
+      <p>- Open "text_lines.py" in the text editor</p>
+      <p>- Play with the width, height and amplitudes of the outcome line 13 and 20 !</p>
+
+    </div>
+    <div id="chap2"></div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page6 text editing-->
+<section class="page" id="zine-D">
+   <div class="general-4">
+    
+    <pre>
+                                            B
+                                    ee ee e ee ee e
+                            c  c  c  c  c   c  c  c  c  c
+                      o   o    o   o    o    o   o    o   o    o
+              m     m     m     m     m     m    m     m     m     m
+        i      i      i      i      i       i      i      i      i      i
+            n       n       n       n        n       n       n       n       n
+        g        g        g        g        g       g        g        g        g
+
+              a         a         a         a        a         a         a
+
+              n         n         n         n        n         n         n
+                o        o         o         o        o         o        o
+                  o        o        o        o       o        o        o
+            a       b       b       b        b       b       b       b       a
+        n             B      B      B       B      B      B      B
+              g     n     e     e     e     e    e     e     e     n
+                          o    c   c    c    c   c    c   c    o
+                            a  o  o  o  o   o  o  o  o  o
+                                      b mm m mm mm b
+                                            iB
+                                      e nn n nn nn eo
+                                c  g  g  g   g  g  g  g  c  o
+                          o                                    o   b
+                    m     a     a     a     a    a     a     a     m     B
+                i                                                        i      e
+            n       n       n       n        n       n       n       n       n
+        g        o        o        o        o       o        o        o        g
+                o        o         o         o        o         o        o
+              b         b         b         b        b         b         b
+              B         B         B         B         B         B         B
+              e         e         e         e        e         e         e
+                c        c         c         c        c         c        c
+                  o        o        o        o       o        o        o
+            a       m       m       m        m       m       m       m       a
+                      i      i      i       i      i      i      i             c
+                    n     n     n     n     n    n     n     n     n     o
+                          o    g   g    g    g   g    g   g    o   m
+                                o                        o  i
+                                      b aa a aa aa bn
+                                            BB
+                                      e nn n nn nn e
+                            a  c  o  o  o   o  o  o  o  c
+                          o    o   o    o    o   o    o   o    o
+              n     m     b     b     b     b    b     b     b     m
+        o      i      B      B      B       B      B      B      B      i
+            n       e       e       e        e       e       e       e       n
+        g        c        c        c        c       c        c        c        g
+                o        o         o         o        o         o        o
+              m         m         m         m        m         m         m
+              i         i         i         i         i         i         i
+              n         n         n         n        n         n         n
+                g        g         g         g        g         g        g
+
+            a       a       a       a        a       a       a       a       a
+        o
+              b     n     n     n     n     n    n     n     n     n
+                      B   o    o   o    o    o   o    o   o    o
+                            e  o  o  o  o   o  o  o  o  o
+                                    cb bb b bb bb b
+    </pre>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page7 advanced-->
+<section class="page" id="zine-D">
+  <div class="general-3">
+    <div id="chap1">
+      <h5>into practice - advanced</h5>
+      <h4>#3 text-editing</h4>
+      <p>Another technic to edit the text extracted previously would be to integrate it as an ascii Image. For this, open a new terminal window and type :</p>
+      <p><strong>1. Install dependancies</strong></p>
+      <p class="casca">pip install pillow</p>
+      <p class="casca">pip install reportlab</p>
+      <p class="casca">pip install argparse</p>
+      <hr>
+      <p><strong>2. Download the script</strong></p>
+      <p>- Get on <a href="http://www.becomingnoob.com/">becomingnoob.com</a></p>
+      <p>- Open the door, and click on "workshop", download the document called "ascii_art.py"</p>
+      <p>- Place it in a new folder in your desktop called "Ascii-test", then type</p>
+      <p class="casca"> cd Desktop\Ascii-test</p>
+      <p>- Add the image you want to work with in the folder</p>
+      <p>- Add a .txt file with the text you want to work with in folder</p>
+      <hr>
+      <p><strong>3. Run the command</strong></p>
+      <p>- To achieve the following effect, run this command</p>
+      <p class="casca">python ascii_art.py your-image.jpg your-text.txt output-name.pdf </p>
+      <p>The result should be appear in the folder as you named it ! To check it :</p>
+      <p class="casca"> start (open on mac) output-name.pdf</p>
+      <hr>
+      
+
+    </div>
+    <div id="chap2">
+      <div>
+      <p><strong>4. Adapt the variables in the command</strong></p>
+      <p>- Play with the width and font size of your output at the end of your command :</p>
+      <p class="casca">--width 150 --font_size 5 </p>
+      <p>150 as a number of caracters and 5 as the font size in pt</p>
+      <hr>
+      <p><strong>5. Adapt the variables in a text editor</strong></p>
+      <p>- Download a text editor : Visual Studio Code or Sublime text</p>
+      <p>- Open "ascii-art.py" in the text editor</p>
+      <p>- Play with the brightness on line 23 !</p>
+      <p class="casca">
+        if brightness > 0.85:</p>
+      </div>
+    </div>
+  </div>
+  <div class="pagefoot"></div>
+</section>
+
+<!--page8 advanced-->
+<section class="page" id="zine-D">
+ 
+    <pre id="chaise-long">
+ The symptoms of accelerated crisis are widely recognized. Multiple attempts have been made to explai
+ n them. I believe that this crisis is rooted in a major twofold experiment which has failed, and I c
+ laim that the resolution of the crisis begins with a recognition of the failure. For a hundred years
+ we have tried to make mac ines work for men and to school men for life in their service. Now it tur
+ ns out that machines do not “work” and that people cannot be schooled for a life at the service of m
+ achines. The hypothesis on which the experiment was built must now be discarded. The hypothesis was 
+that machines can replace slaves. Ivan Illich - Tools for Conviviality http://clevercycles.com/tools
+ _for_conviviali y/ 17 of 126 10/11/07 9:20 AM The evidence shows that, used for this purpose, machin
+ es enslave men. Neither a di  atorial proletariat nor a leisure mass can escape the dominion of cons
+ tantly expanding industrial t ols. The crisis can b                             invert the present d
+ eep structure of tools; if we give people tools th                                 with high, indepe
+ ndent efficiency, thus simultaneously eliminating                                 sters and enhancin
+ g each person’s range of freedom. People need new   ol     wo    i     t     ha  tools that “work” f
+ or them. They need technology to make the most of   e     gy     im   nat    ea   has, rather than m
+ ore well-programmed energy slaves. I believe that   ci    mu    e     nst    ed  o enlarge the contr
+ ibution of autonomous individuals and primary grou   t    e     l     ct    ess  f a new system of p
+ roduction designed to satisfy the human needs whic  it    o     rm    .     act  the institutions of
+ industrial society do just the opposite. As the p  er    ma    es    re    ,     role of persons mo
+ re and more decreases to that of mere consumers. I  iv    ls    d     s     ov  and to dwell. They n
+ eed remedies for their diseases and means to commu  ca    it    e     he    eo  e cannot make all th
+ ese things for themselves. They depend on being s  pli   wit   bje    an    rv  es which vary from c
+ ulture to culture. Some people depend on the supp   of   od  n  ot   s o    e   pply of ball bearing
+ s. People need not only to obta n things, they ne   ab    al   he    edo   o m  e things among which
+ they can live, to give shape to them according t  th    ow    st    an     pu  them to use in carin
+ g for and about others. Prisoners in rich count     o     h    ac     t    re   ings and services th
+ an members  f their families, but they have no     in     t    s     to     a   and c           e wh
+ at to do with them. Their punishment consists i    in    pr     o    at    ha   call             y.”
+ They are degraded to the status of mere consum     I    os    e      “    iv  lity”              th
+ e opposite of Ivan Illich - To ls for Convivialit  ht    /c   erc   es.    to  s_for_              1
+ 8 of 126 10/11/07 9:20 AM industrial productivity                    n     no  us and    at      ter
+ course among persons, and the interc ur   of per                               d    s i  contrast wi
+ th the conditioned response of pers ns    th   emands m                         an   y            en
+ vironment. I consider conviviali      b  in   idual freedom realized in per   al in   dependence and
+ , as such, an intrinsic ethica  v  ue. I be  eve that, in any society, as      vial          uced be
+ low a certain level, no amount         tria  productivity can eff              fy th        it creat
+ es among society’s members. Pre             ional purposes, which               ial p   uct         
+the expense of convivial effec       s  ar  a major facto                       and me  inglessness 
+that plague contemporary soci   . T   incr  sing demand for products has come    defin  soci      pr
+ ocess. I will suggest how t     re ent tre   can be reversed                     ce an   echnology c
+ an be used to endow human acti          un  ecedented effective                  l wou   permit the 
+evolution of a life style and of a p  iti    system which give priority to the    tect   , th  maxim
+ um use, and the enj     t of the one reso   e that is al  s                       mon    l people: p
+ ersonal energy und                rol. I    l argue that we can no                 wo   effectively 
+without public co                s   d in    utions that curtail or negate any     on   right to the
+ creative use of hi             gy. For t    purpose we need procedu                    ontrols over
+ the tools of socie y ar            d an    verned by political proc                   decisions by 
+ex  rts. The transition     ocial    can    be effected without an inversion of o      sent institut
+     and the s  stitution of convivial f    ndustrial tools. At the                   ool  g of soci
+    will rem    a pious dream unless the   eals of socialist jus                      e that the pre
+   t crisis o      major institutions ou  t to be welcomed as a crisis of revoluti    y liberation b
+   use our  r              ions abridge   sic human Ivan Illi                         ty http://clev
+  cycles.com/  o                it / 19  f 126 10/11/07 9:20                          f pr  iding pe
+ ple wit       instituti            .   is  orld-wide crisis                            ca  lead to 
+a new consci usne    bout the nat  e    tools and to majority action for their contr    If tools are
+ not cont  lled polit        they will be  anaged in a belat      hno    ic res         disaster. Fr
+ eedom and dign      ll c     u  to dissolve into an unpreced                            hi  tools. A
+ s an alternative    t   n      c disaster, I propose the vis                            A convivial 
+so iety would be the resu   of social arrangements that guarantee for eac           e    t ample and
+ f ee    ess to the tools of the community and limit this fr  dom only in favor of an    r member’s 
+  ual           t present people tend to relinquish the tas                                professio
+ na    i       y t     er power to politicians who promise t                               iver this 
+f       Th y acc            g range  f power levels in soc                                  maintain
+ h gh ou  uts. P             itutio    hemselves become draft mechanisms to p              to compli
+ city with  utput goa     hat    ri     omes to be subordin   d to what is good for inst    ions. Jus
+ tice is debased to mean  he equa      ribution of institu                                   n    is 
+intolerably red ced  y a societ  th   defines the maximum                                        he 
+largest consumption of industrial goods. Alternate politi                                         f 
+ ermitting all people to define the images of their own f                                          t
+   xclu e the design of artifacts and rules that are obstacles to the exercis                    ree
+ om.       olitics would limit the scope of tools as demanded by the protection of three values: sur
+ v  al  justice, and self-defined work. I take these values to be fundamental to any convivial societ
+ y, ho  ver different one such society might be from another in practice, institutions, or rationale.
+ Each of these three values imposes its own limits on tools. The Ivan Illich - Tools for Conviviali
+    </pre>
+    <figcaption>extract of <span>Tools of Conviviality</span> by Ivan Illitch, in a beach chair</figcaption>
+
+  <div class="pagefoot"></div>
+</section>
+
+
+
+
+<!--page9 "vim installing"-->
+<section class="page" id="zine-D">
+  <h5>bonus</h5>
+  <h4>#4 text-editing with VIM</h4>
+     <pre>
+=======================================================================================
+  =    W e l c o m e   t o   t h e   V I M   T u t o r    -    Version 1.7      =
+=======================================================================================
+        </pre>
+
+  <div class="general-3">
+        <div id="chap1">
+          <p>Vim a <strong>highly configurable text editor</strong> built to enable efficient text editing. It is very useful to write and modify codes or texts in every text format possible (.html, .txt, .py, .css, etc). </p>
+          <p>Its <strong> text-based interface</strong> refers to the terminal's, and Vim can be opened directly from it as well. It makes it easier to naviguate from one and another. It is based on the same principle : the user can activate a multitude of commands, but they have to be known. They are no buttons for anything, everything happens <strong>from the keyboard.</strong> </p>
+        <!--VIM--> 
+        <p><strong>Install VIM</strong></p>
+        <p>->On windows, vim must be installed and opened as an application. Check the <a href="https://www.vim.org/download.php">Vim website</a> (vim.org/download.php) to follow the instructions.</p>
+        <p>-> On mac just run : <strong class="casca">brew install vim</strong></p>
+        <hr>
+          <h5>in practice</h5>
+          <p>Because of the text-based interface, it is very easy to feel lost in vim the first time using it. In fact it requires to already know a few commands to be able to do a simple text-editing. That's why "vimtutor" has been developped. It is openable directly from the terminal typing :<strong class="casca">vimtutor</strong></p>
+          
+          <div class="container-1">
+            <img class="object-1" src=img/learning_curves.jpg>
+            <figcaption><span>"vi" refers to vim</span></figcaption>
+          </div>
+        </div>
+    <div id="chap2">
+      <div>
+        <p>A window opens and makes the user going through various exercises to comprehend the essential commands and keyboard actions.</p>
+        <p><strong>Modes :</strong> Vim has 3 editing modes. They are accessible via keyboard shortcuts.  
+          <ul>
+            <li>Command (default) : to write commands <br>
+              type <strong class="code">esc</strong></li>
+            <li>Insert : to add text <br>
+              type <strong class="code">I or i, 0, A </strong></li>
+            <li>Visual : to select<br> type <strong class="code">v or V </strong></li>
+          </ul></p>
+          <hr>
+        <p><strong>Naviguation :</strong> To move around, select text, the faster in vim is tu use the keyboard (again) and not the mouse. Quite easy to remember, it has to become a part of the user's muscle memory to be really efficent, doable with some practice.</p>
+        <pre> 
+        /\         press
+         k         k to go up
+   < h       l >   h to go left
+                   l to go right
+         j         j to go down
+         v
+      </pre>
+      <hr>
+        <p><strong>Buffers :</strong> are editing workflows wich enable to open temporary space in the memory to store opened files, open and edit parallel files, check a document, etc. The switch from a buffer to another is quite easy and improve considerably the speed and efficiency of the editor. </p>
+        <p>The most usefull one at first can be called by typing <strong class="code">:help</strong>. And a buffer will be opened with an access to Vim help ressources, where you can scroll in all the explanation of possible commands.</p>
+      </div>
+    </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page10 "VIM vocab"-->
+<section class="page" id="zine-D">
+  <h4>- vim first language : in command mode "esc"</h4>
+  <div class="table">
+    <table>
+      <tr>
+        <th>command </th>
+        <th>description</th>
+        <th>options</th>
+      </tr>
+      <tr>
+        <td class="code">:q</td>
+        <td><strong>quit</strong></td>
+        <td>:wq : save and quit</td>
+      </tr>
+      <tr>
+        <td class="code">:w</td>
+        <td><strong>save</strong> or save as</td>
+        <td>:w! : overwrite <br>:w file.name : save as...</td>
+      </tr>
+      <tr>
+        <td class="code">:</td>
+        <td>introduce a <strong>command </strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">u, U</td>
+        <td><strong>undo</strong> the last change, Undo for the whole line</td>
+        <td>ctrl+R : redo</td>
+      </tr>
+      <tr>
+        <td class="code">:help "command"</td>
+        <td>open the <strong>help ressources</strong></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">:bd</td>
+        <td>close the buffer </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">ctrl+Z</td>
+        <td>leave temporarily vim, to the terminal </td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">fg</td>
+        <td><strong>foreground :</strong> comes back to vim</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">ctrl+W</td>
+        <td>switch to the other buffer</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">:split "file.name"</td>
+        <td>open a window in vim</td>
+        <td>:close! : close the window</td>
+      </tr>
+      <tr>
+        <td class="code">x</td>
+        <td>delete what's under the cursor</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">dd</td>
+        <td>delete the whole line</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">y</td>
+        <td><strong>yank :</strong> copy in the clipboard, what has been selected (in Visual mode)</td>
+        <td>p : put -> paste</td>
+      </tr>
+      <tr>
+        <td class="code">A</td>
+        <td><strong>append :</strong> goes to Insert mode at the end of the line</td>
+        <td>0, idem but at the start of the line</td>
+      </tr>
+      <tr>
+        <td class="code">G</td>
+        <td>go to the top o the document</td>
+        <td>gg : go to the bottom</td>
+      </tr>
+      <tr>
+        <td class="code">r"x"</td>
+        <td>change the caracter under the cursor to a new one</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">:w | !Open%</td>
+        <td>open a preview in the default browser</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">:set nu</td>
+        <td>show line numbers</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">:set textwidth="x"</td>
+        <td>set the textwidth to x caracters</td>
+        <td>gq : apply to the selection</td>
+      </tr>
+      <tr>
+        <td class="code">:x+y>></td>
+        <td>tabulate lines x to y x2 (>>)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td class="code">/</td>
+        <td>introduce a research</td>
+        <td>:set hlsearch : highlight the search in the text</td>
+      </tr>
+
+
+       </table>
+  </div>
+
+<div class="pagefoot"></div>
+</section>
+
+
+
+
+<!--page12 "sources"-->
+<section class="page" id="zine-D">
+  <div class="general-6">
+  <div>
+        <h4>#5 archiving the work</h4>
+        <p>To mark everyone's entrance in the noob community, it is better that<strong> every participant can archive their achievements digitally and on paper. </strong>
+        </p>
+          <ul>
+            <li><strong>select 2 outcomes</strong> .png or .jpg that have been realised during the workshop : images modified, edited, screenshots from the terminal, etc.</li>
+            <li>name them like this : date + title (or name of technique used) + your name</li>
+              <p class="casca"> DD-MM-YY_title_your-name.jpg</p>
+            <li><strong>A usb stick</strong> is dedicated to collect them</li>
+            <li><strong>Connect to the printer </strong>and print one of them twice : one for you, one for the Noob's archive</li>
+        </ul></p>
+
+  </div>
+   <div>
+      <div class="sources">
+        <h4>sources</h4>
+        <ul>
+          <li><span>Scraping Wikipedia Pages with Python Wikipedia Library,</span> on the Python Tutorial blog, well.sr website, 2020</li>
+          <li><span>What is web scraping and how to use it,</span> on geekforgeeks website, 2025</li>
+          <li><span>Beautiful soup documentation,</span> on the Bs4 website</li>
+          <li><span>Implementing Web Scraping in Python with BeautifulSoup,</span> on geekforgeeks website, 2024</li>
+          <li><span>The Legalities of Web Scraping: What’s Allowed and What’s Not,</span> on Automatio website, 2021</li>
+          <li><span>What Is a Web Crawler, and How Does It Work?,</span> by Vann Vincente, on Howtogeek website, 2021</li>
+          <li><span>Webcrawlers,</span> on wikipedia</li>
+          <li><span>Working With Buffers in Vim: A Guide,</span> by Igor Irianto, on Built-in website, 2024</li>
+
+
+        </ul>
+      </div>
+    </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+
+
+</body>
+
+<script>
+  window.alert("Hold CtrlP to export the pdf, to print it in a booklet format from your computer")
+</script>
+
+</html>

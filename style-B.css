@@ -1,0 +1,395 @@
+
+@font-face{
+    font-family: 'Homoneta-rg';
+    src: url("font/Homoneta/Homoneta-Regular.otf");
+}
+
+@font-face{
+    font-family: 'Lucette-it';
+    src: url("font/Lucette-Regularitalic.otf");
+}
+
+@font-face{
+    font-family: 'Cascadia';
+    src: url("font/CascadiaCode-Regular.otf");
+}
+
+*{margin: 0;  box-sizing: border-box;}
+
+
+body{
+   background-color:  #f8faea;
+  counter-reset: section;
+  }
+
+
+.page{
+  padding:5mm;
+  position:relative;
+  margin: auto; margin-bottom: 2cm;  height: 210mm; width:148.5mm;
+  background-color: #FFF957;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  }
+
+
+
+
+/*PAGE 1*/
+.general{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+        "a a"
+        "b c";
+
+    z-index: 1;
+}
+
+.header{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overlay: hidden;
+}
+/*
+.bande{
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+
+    p{
+    font-size: 8pt;
+}
+
+}*/
+
+pre{
+    font-size: 8.25pt;
+    position : static;
+}
+
+code{
+    font-size: 7.5pt;
+}
+
+/*PAGE 2*/
+
+.general-2{
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    row-gap: 40px;
+}
+
+.general-3{
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: 100%;
+    width: 100%;}
+
+.general-4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:  row;
+    justify-content: center;}
+
+.schema{
+    height: 100%;
+    display: inline-block;}
+
+.shadow{
+    background-color: black;
+    color: white;
+    font-family: "Cascadia";
+    width: fit-content;
+    font-size: 12pt;
+}
+            /*MOTS*/
+            #shell{
+                position: absolute;
+                top: 412px;
+                left: 240px;}
+
+            #kernel{
+                position: absolute;
+                top: 520px;
+                left: 250px;}
+
+            #syscall{
+                position: absolute;
+                top: 450px;
+                left: 110px;}
+
+            #interpreter{
+                position: absolute;
+                top: 445px;
+                left: 300px;}
+
+#oval {
+    width: 50px;
+    height: 30px;
+    border-radius: 100px / 70px;
+    border-style: solid;
+    border-width: 1.5px;
+    position: absolute;
+    top: 175px;
+    left: 225px;
+  }
+
+.schema2{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+}
+
+#list-lg{
+    width: 250px;
+    align-self: center;
+
+    p{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/*PAGE 3*/
+
+ table, th, td {
+  border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+   font-size: 10pt;
+
+    th{
+        font-size: 9pt}
+}
+
+.code{
+    font-family: "Cascadia";
+    font-size: 9pt;
+
+}
+
+
+#chap1{
+    width: 100%;
+
+    pre{margin: 20px auto 0 auto;}
+
+    
+}
+
+#chap2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    
+
+    figcaption{
+        margin: 0;
+    }
+
+    .logo{
+        align-self: end;
+    }
+
+    .container-1{
+        margin-bottom: 20px;
+
+
+    }
+}
+
+
+.warn{
+    border-style: solid;
+    align-self: center;
+    padding: 20px ;
+    margin-bottom: 20px;
+
+    p{font-size: 8pt;
+        margin: 0;
+        text-indent: 0;
+        }
+
+        .big{
+            font-size: 12pt;
+        }
+
+        ol{
+            padding: 0;
+        }
+    
+}
+
+#memo{
+    align-self: end;
+    width: 40%;
+}
+
+
+
+
+
+/* texte*/
+
+h1{
+    font-family: "Homoneta-rg";
+    font-size: 50pt;
+    line-height: 0;
+        position: absolute;
+    top: 2.5cm;
+
+    }
+
+h4{
+    font-family: "Homoneta-rg";
+    font-size: 16pt;
+    margin-bottom: 15px;
+}
+
+span{
+    font-style: italic;
+}
+
+p{
+    font-size: 10pt;
+    margin-bottom: 10px;
+    
+}
+
+ul, ol{
+    font-size: 8pt;
+}
+
+figcaption{
+    font-size: 8pt;
+
+    span{
+        font-family: "Lucette-it";
+    }
+}
+
+.logo{
+    font-family: "Lucette-it";
+        margin: 0;
+    position: absolute;
+}
+
+.big{
+        font-size: 24pt;
+        margin-top: 2cm;
+    }
+
+#byte{
+    font-size: 6.5pt;
+}
+
+#figtop{
+    margin-top: 55px;
+}
+
+.shadow-2{
+    background-color: black;
+    color: white;
+    font-family: "Cascadia";
+    width: fit-content;
+    font-size: 8pt;
+}
+
+
+
+/* IMAGES */
+.container-1{
+    width: 100%;
+}
+
+.container-2{
+    width: 50%;
+}
+
+.object-1{
+    object-fit:contain;
+    width: 100%;
+    height: 100%;
+    }
+
+#bw{
+    filter: grayscale(1);
+    
+}
+
+
+/*sous-partie*/
+.intro{
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
+}
+
+.context{
+    grid-area: c;
+
+    p{
+        margin-top: 20px;
+        margin-left: 20px;
+        text-indent: 1cm;
+    }
+
+}
+
+.sources{
+    ul{font-size: 10pt;}
+    width: 100%;
+
+}
+
+.logo-fin{
+    font-family: "Lucette-it";
+}
+
+.pagefoot::before {
+  counter-increment: section;
+  content:counter(section);
+  font-size: 8pt;
+  }
+
+
+.pagefoot{
+  height: 3mm;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  justify-self:end;
+}
+
+
+@media print{
+
+    .page{
+        background-color: white;
+    } 
+
+}

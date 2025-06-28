@@ -1,0 +1,2126 @@
+
+
+@font-face{
+    font-family: 'Homoneta-rg';
+    src: url("font/Homoneta/Homoneta-Regular.otf");
+}
+
+@font-face{
+    font-family: 'Lucette-it';
+    src: url("font/Lucette-Regularitalic.otf");
+}
+
+@font-face{
+    font-family: 'Cascadia';
+    src: url("font/CascadiaCode-Regular.otf");
+}
+
+*{margin:0;}
+
+@media only screen and (min-width: 600px) {
+body{
+background-color: #f8faea;
+min-height: 100vh;
+overflow : hidden;
+-ms-overflow-style: none;  /* Internet Explorer 10+ */
+scrollbar-width: none;  /* Firefox */}
+
+.app{
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+#bodyflex{
+	display: flex; 
+	flex-direction: row;
+	width: 100vw;
+	height: 100vh;
+}
+
+p{
+	font-family: 'Times New Roman', Times, serif;
+}
+
+/*sidebar*/
+.openbutton{
+
+	position: absolute;
+	bottom: 1cm;
+	right: 1cm; 
+	font-size: 18pt;
+	cursor: pointer;
+    width: 80px;
+
+}
+
+
+
+
+
+
+
+.sidebar {
+	height:0;
+	width: 100%;
+	position: absolute;
+	z-index: 1;
+	bottom: 0;
+	right: 0;
+	overflow-y: hidden;
+	transition: 0.25s;
+	background: #ffffff;
+	background: linear-gradient(0deg, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 1) 55%, rgb(248, 250, 234) 100%);
+	p{font-family: Arial, Helvetica, sans-serif;}
+	
+}
+
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.sidebar .closebtn {
+  position: absolute;
+  padding: 8px 8px 8px 32px;
+  top: 0;
+  right: 25px;
+  font-size: 20px;
+  margin-left: 50px;
+  text-decoration: none;
+  font-size: 25px;
+  color: black;
+  display: block;
+  transition: 0.3s;
+}
+
+
+
+.side-content{
+	padding: 5mm;
+	width: 65%;
+	overflow-y: scroll;
+	height: 100%;
+	-ms-overflow-style: none;  /* Internet Explorer 10+ */
+	scrollbar-width: none;  /* Firefox */
+	font-family: Arial, Helvetica, sans-serif;
+
+	div{
+			margin-bottom: 2px;
+
+	}
+
+	
+}
+
+#contactDiv{
+	margin-bottom: 50pt;
+}
+.side-title{
+	font-weight: bold;
+	cursor: pointer;
+}
+
+.side-inside{
+	margin-left: 15%;
+
+	p{
+		margin-bottom: 5px;
+	}
+
+	p:first-child{margin-top: 10px;}
+
+	p:last-child{
+		margin-bottom: 20px;
+	}
+
+	a{
+  		color: black;
+  		display: block;
+	}
+
+	span{
+		font-style: italic;
+	}
+
+	ol{        padding-left: 5mm;}
+
+	#bigg{
+		font-size: 25pt;
+	}
+
+	#inline-title{
+		margin-top:20px;
+	}
+	
+}
+
+
+
+.map{
+	padding-bottom: 50pt;
+}
+
+#workshop, #contact, #contextualApproach{
+	display: none;
+}
+
+
+
+.volume{
+		/*to have it on the left side vertically */
+		color: black;
+		align-self: end;
+
+		  h3{
+		  	  transform: rotate(270deg);
+		  	  font-family: 'Homoneta-rg';
+		  	  font-size: 25pt;
+
+		  }
+}
+
+.volet{
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-evenly;
+
+	
+}
+
+.print{
+	width: 50px;
+	justify-self: end;
+	font-size: 30pt;
+
+	a{
+		color: black;
+		text-decoration:none;
+	}
+	
+}
+
+#sm{
+	font-size: 4pt;
+}
+
+.replie{
+	  	width: 100px;
+	  	transition: width 1s;
+	  	padding: 10px;
+	  	overflow: hidden;
+	  	overflow-y: scroll;
+		-ms-overflow-style: none;  /* Internet Explorer 10+ */
+		scrollbar-width: none;  /* Firefox */
+}
+.replie::-webkit-scrollbar { 
+    display: none;  /* Safari and Chrome */
+}
+
+
+.volet.replie:hover{
+	 	width: 4000px;
+
+}
+
+.replie:last-child{
+	width: 800px;
+}
+
+.deplie{
+	width: 4000px;
+	background-color: blue;
+	padding: 10px;
+	overflow-y: scroll;
+	overflow-x: auto;
+
+}
+
+.content{
+	.page{
+	  padding:5mm;
+	  position:relative;
+	  margin: auto; margin-bottom: 2cm;  height: 210mm; width:148.5mm;
+  }
+}
+
+h1{
+	font-family: "Homoneta";
+}
+
+
+#zine2{
+
+	.page{background-color: #FFF957;}
+		/*PAGE 1*/
+	
+	.general{
+	    display: grid;
+	    width: 100%;
+	    height: 100%;
+	    grid-template-columns: 1fr 1fr;
+	    grid-template-rows: 1fr 3fr;
+	    grid-template-areas: 
+	        "a a"
+	        "b c";
+
+	    z-index: 1;
+	}
+
+	.header{
+	    grid-area: a;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: end;
+	    overlay: hidden;
+	}
+	/*
+	.bande{
+	    border-style: solid;
+	    border-width: 1px;
+	    padding: 5px;
+	    width: 100%;
+	    text-align: center;
+
+	    p{
+	    font-size: 8pt;
+	}
+
+	}*/
+
+	pre{
+	    font-size: 8.5pt;
+	    position : static;
+	}
+
+	code{
+	    font-size: 8pt;
+	}
+
+	/*PAGE 2*/
+
+	.general-2{
+	    display: flex;
+	    flex-direction:  column;
+	    justify-content: space-between;
+	    height: 100%;
+	    width: 100%;
+	    row-gap: 40px;
+	}
+
+	.general-3{
+	    display: flex;
+	    flex-direction:  row;
+	    justify-content: space-between;
+	    column-gap: 20px;
+	    height: 100%;
+	    width: 100%;}
+
+	.general-4{
+	    height: 100%;
+	    width: 100%;
+	    display: flex;
+	    flex-direction: row;
+	    justify-content: center;}
+
+	.schema{
+	    height: 100%;
+	    display: inline-block;}
+
+	.shadow{
+	    background-color: black;
+	    color: white;
+	    font-family: "Cascadia";
+	    width: fit-content;
+	    font-size: 12pt;
+	}
+	            /*MOTS*/
+	            #shell{
+	                position: absolute;
+	                top: 412px;
+	                left: 240px;}
+
+	            #kernel{
+	                position: absolute;
+	                top: 520px;
+	                left: 250px;}
+
+	            #syscall{
+	                position: absolute;
+	                top: 450px;
+	                left: 110px;}
+
+	            #interpreter{
+	                position: absolute;
+	                top: 445px;
+	                left: 300px;}
+
+
+
+	.schema2{
+	    height: 100%;
+	    display: flex;
+	    flex-direction: row;
+	    column-gap: 20px;
+
+	}
+
+	#list-lg{
+	    width: 250px;
+	    align-self: center;
+
+	    p{
+	        margin-bottom: 20px;
+	    }
+	}
+
+
+
+
+	/*PAGE 3*/
+
+	 table, th, td {
+	  border: 1px solid black;
+	   border-collapse: collapse;
+	   padding: 5px;
+	   font-size: 10pt;
+
+	    th{
+	        font-size: 9pt}
+	}
+
+	.code{
+	    font-family: "Cascadia";
+	    font-size: 9pt;
+
+	}
+
+
+	#chap1{
+	    width: 100%;
+
+	    pre{margin: 20px auto 0 auto;}
+
+	    
+	}
+
+	#chap2{
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    row-gap: 20px;
+	    width: 100%;
+	    margin-top: 30px;
+	    
+
+	    figcaption{
+	        margin: 0;
+	    }
+
+	    .logo{
+	        align-self: end;
+	    }
+
+	    .container-1{
+	        margin-bottom: 20px;
+
+
+	    }
+	}
+
+
+	.warn{
+	     border-style: solid;
+	    align-self: center;
+	    padding: 20px ;
+	    margin-bottom: 20px;
+
+	    p{font-size: 8pt;
+	        margin: 0;
+	        text-indent: 0;
+	        }
+
+	        .big{
+	            font-size: 12pt;
+	        }
+
+	        ol{
+	            padding: 0;
+	        }
+	    
+	}
+
+	#memo{
+		align-self: end;
+        width: 30%;
+        position: absolute;
+        right: 0.5cm;
+	}
+
+
+
+
+
+	/* texte*/
+
+	h1{
+	    font-family: "Homoneta-rg";
+	    font-size: 43pt;
+	    position: absolute;
+	    top: 2cm;
+
+
+	    }
+
+	h4{
+	    font-family: "Homoneta-rg";
+	    font-size: 16pt;
+	    margin-bottom: 15px;
+	}
+
+	span{
+	    font-style: italic;
+	}
+
+	p{
+	    font-size: 10pt;
+	    margin-bottom: 10px;
+	    
+	}
+
+	ul, ol{
+	    font-size: 8pt;
+	}
+
+	figcaption{
+	    font-size: 8pt;
+
+	    span{
+	        font-family: "Lucette-it";
+	    }
+	}
+
+	.logo{
+	    font-family: "Lucette-it";
+	        margin: 0;
+	    position: absolute;
+	}
+
+	.big{
+	        font-size: 24pt;
+	        margin-top: 2cm;
+	    }
+
+	#byte{
+	    font-size: 6.5pt;
+	}
+
+	#figtop{
+	    margin-top: 55px;
+	}
+
+	.shadow-2{
+	    background-color: black;
+	    color: white;
+	    font-family: "Cascadia";
+	    width: fit-content;
+	    font-size: 8pt;
+	}
+
+
+
+	/* IMAGES */
+	.container-1{
+	    width: 100%;
+	}
+
+	.container-2{
+	    width: 50%;
+	}
+
+	.object-1{
+	    object-fit:contain;
+	    width: 100%;
+	    height: 100%;
+	    }
+
+	#bw{
+	    filter: grayscale(1);
+	    
+	}
+
+
+	/*sous-partie*/
+	.intro{
+	    grid-area: b;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: end;
+
+	}
+
+	.context{
+	    grid-area: c;
+
+	    p{
+	        margin-top: 20px;
+	        margin-left: 20px;
+	        text-indent: 1cm;
+	    }
+
+	}
+
+	.sources{
+	    ul{font-size: 10pt;}
+	    width: 100%;
+
+	}
+
+	.logo-fin{
+	    font-family: "Lucette-it";
+			width: 3.5cm;
+
+	}
+
+
+	@media print{
+
+	    .page{
+	        background-color: white;
+	    } 
+
+	}
+	
+}
+
+
+#zine1{
+
+
+	.page{background-color: #FF3C3C;}
+
+		/*PAGE 1*/
+	.general{
+	    display: grid;
+	    width: 100%;
+	    height: 100%;
+	    grid-template-columns: 1fr 1fr;
+	    grid-template-rows: 1fr 3fr;
+	    grid-template-areas: 
+	        "a a"
+	        "b c";
+
+	    z-index: 1;
+	}
+
+	.header{
+	    grid-area: a;
+	    display: flex;
+	    flex-direction: column;
+	    align-items: end;
+	    overlay: hidden;
+	}
+	/*
+	.bande{
+	    border-style: solid;
+	    border-width: 1px;
+	    padding: 5px;
+	    width: 100%;
+	    text-align: center;
+
+	    p{
+	    font-size: 8pt;
+	}
+
+	}*/
+
+	pre{
+	    font-size: 8.5pt;
+	    position : static;
+	}
+
+	code{
+	    font-size: 8pt;
+	}
+
+
+
+	#first-intro{
+	    font-size:9.5pt;
+	}
+	/*PAGE 2*/
+
+	.general-2{
+	    display: flex;
+	    flex-direction:  column;
+	    justify-content: space-between;
+	    height: 100%;
+	    width: 100%;
+	    row-gap: 40px;
+	}
+
+	.general-3{
+	    display: flex;
+	    flex-direction:  row;
+	    justify-content: space-between;
+	    column-gap: 20px;
+	    height: 100%;
+	    width: 100%;}
+
+	.general-4{
+	    height: 100%;
+	    width: 100%;
+	    display: flex;
+	    flex-direction:  row;
+	    justify-content: center;}
+
+	.schema{
+	    height: 100%;
+	    display: inline-block;}
+
+	.shadow{
+	    background-color: black;
+	    color: white;
+	    font-family: "Cascadia";
+	    width: fit-content;
+	    font-size: 12pt;
+	}
+	            /*MOTS*/
+	            #shell{
+	                position: absolute;
+	                top: 412px;
+	                left: 240px;}
+
+	            #kernel{
+	                position: absolute;
+	                top: 520px;
+	                left: 250px;}
+
+	            #syscall{
+	                position: absolute;
+	                top: 450px;
+	                left: 110px;}
+
+	            #interpreter{
+	                position: absolute;
+	                top: 445px;
+	                left: 300px;}
+
+	#oval {
+	    width: 50px;
+	    height: 30px;
+	    border-radius: 100px / 70px;
+	    border-style: solid;
+	    border-width: 1.5px;
+	    position: absolute;
+	    top: 175px;
+	    left: 225px;
+	  }
+
+	.schema2{
+	    height: 100%;
+	    display: flex;
+	    flex-direction: row;
+	    column-gap: 20px;
+
+	}
+
+	#list-lg{
+	    width: 250px;
+	    align-self: center;
+
+	    p{
+	        margin-bottom: 20px;
+	    }
+	}
+
+
+
+
+	/*PAGE 3*/
+
+	 table, th, td {
+	  border: 1px solid black;
+	   border-collapse: collapse;
+	   padding: 5px;
+	   font-size: 10pt;
+
+	    th{
+	        font-size: 9pt}
+	}
+
+	.code{
+	    font-family: "Cascadia";
+	    font-size: 9pt;
+
+	}
+
+
+	#chap1{
+	    width: 100%;
+
+	    pre{margin: 20px auto 0 auto;}
+
+	    
+	}
+
+	#chap2{
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: space-between;
+	    row-gap: 20px;
+	    width: 100%;
+	    margin-top: 30px;
+	    
+
+	    figcaption{
+	        margin: 0;
+	    }
+
+	    .logo{
+	        align-self: end;
+	    }
+
+	    .container-1{
+	        margin-bottom: 20px;
+
+
+	    }
+	}
+
+
+	#warn{
+	    border-style: solid;
+	    align-self: center;
+	    padding: 20px ;
+	    margin-bottom: 20px;
+
+	    p{font-size: 8pt;
+	        margin: 0;
+	        text-indent: 0;
+	        }
+
+	        .big{
+	            font-size: 12pt;
+	        }
+
+	        ol{
+	            padding: 0;
+	        }
+	    
+	}
+
+	#memo{
+	    align-self: end;
+	    width: 40%;
+	}
+
+
+
+
+
+	/* texte*/
+
+	h1{
+	    font-family: "Homoneta-rg";
+	    font-size: 43pt;
+	    position: absolute;
+	    top: 2cm;
+
+	    }
+
+	h4{
+	    font-family: "Homoneta-rg";
+	    font-size: 16pt;
+	    margin-bottom: 15px;
+	}
+
+	span{
+	    font-style: italic;
+	}
+
+	p{
+	    font-size: 10pt;
+	    margin-bottom: 10px;
+	    
+	}
+
+	ul, ol{
+	    font-size: 8pt;
+	}
+
+	figcaption{
+	    font-size: 8pt;
+
+	    span{
+	        font-family: "Lucette-it";
+	    }
+	}
+
+	.logo{
+	    font-family: "Lucette-it";
+	        margin: 0;
+	    position: absolute;
+	}
+
+	.big{
+	        font-size: 24pt;
+	        margin-top: 2cm;
+	    }
+
+	#byte{
+	    font-size: 6.5pt;
+	}
+
+	#figtop{
+	    margin-top: 55px;
+	}
+
+	.shadow-2{
+	    background-color: black;
+	    color: white;
+	    font-family: "Cascadia";
+	    width: fit-content;
+	    font-size: 8pt;
+	}
+
+	.definition{
+	    margin-left: 20px;
+	}
+
+
+	.casca{
+	    font-family: "Cascadia";
+	    font-size: 8pt;
+	    margin-left: 20px;
+	}
+
+	.title{
+	    margin-top: 15px;
+	}
+
+	.ascii{
+	    pre{font-size: 2pt;}
+
+	    margin-top: 20px;
+
+	}
+
+
+	/* IMAGES */
+	.container-1{
+	    width: 100%;
+	}
+
+	.container-2{
+	    width: 50%;
+	}
+
+	.object-1{
+	    object-fit:contain;
+	    width: 100%;
+	    height: 100%;
+	    }
+
+	#bw{
+	    filter: grayscale(1);
+	    
+	}
+
+	#vim{
+	    filter: grayscale(1);
+	    margin-top: 30px;
+	}
+
+	#potato{
+	    filter: grayscale(1);
+	    width: 55%;
+	}
+
+
+
+
+	/*sous-partie*/
+	.intro{
+	    grid-area: b;
+	    display: flex;
+	    flex-direction: column;
+	    justify-content: flex-start;
+	    row-gap: 80px;
+
+	}
+
+	.context{
+	    grid-area: c;
+
+	    p{
+	        margin-top: 20px;
+	        margin-left: 20px;
+	        text-indent: 1cm;
+	    }
+
+	}
+
+	.sources{
+	    ul{font-size: 10pt;}
+	    width: 100%;
+
+	}
+
+	.logo-fin{
+	    font-family: "Lucette-it";
+			width: 3.5cm;
+
+	}
+
+
+	@media print{
+
+	    .page{
+	        background-color: white;
+	    } 
+
+}
+}
+
+#zine3{
+	.page{background-color: #3cb530;}
+
+	#zine-D{
+	.page{background-color: #3cb530;}}
+
+.page{
+  padding:5mm;
+  position:relative;
+  margin: auto; margin-bottom: 2cm;  height: 210mm; width:148.5mm;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  }
+
+
+/*PAGE 1*/
+.general{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+        "a a"
+        "b c";
+
+    z-index: 1;
+}
+
+.header{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overlay: hidden;
+}
+/*
+.bande{
+    border-style: solid;
+    border-width: 1px;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+
+    p{
+    font-size: 8pt;
+}
+
+}*/
+
+pre{
+    font-size: 8pt;
+    position : static;
+    width: 100%;
+}
+
+code{
+    font-size: 7.5pt;
+}
+
+/*PAGE 2*/
+
+.general-2{
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    row-gap: 40px;
+}
+
+.general-3{
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: 100%;
+    width: 100%;}
+
+.general-4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:  row;
+    justify-content: center;}
+
+.schema{
+    height: 100%;
+    display: inline-block;}
+
+.shadow{
+    background-color: black;
+    color: white;
+    font-family: "Cascadia";
+    width: fit-content;
+    font-size: 12pt;
+}
+            /*MOTS*/
+            #shell{
+                position: absolute;
+                top: 412px;
+                left: 240px;}
+
+            #kernel{
+                position: absolute;
+                top: 520px;
+                left: 250px;}
+
+            #syscall{
+                position: absolute;
+                top: 450px;
+                left: 110px;}
+
+            #interpreter{
+                position: absolute;
+                top: 445px;
+                left: 300px;}
+
+#oval {
+    width: 50px;
+    height: 30px;
+    border-radius: 100px / 70px;
+    border-style: solid;
+    border-width: 1.5px;
+    position: absolute;
+    top: 175px;
+    left: 225px;
+  }
+
+.schema2{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+}
+
+#list-lg{
+    width: 250px;
+    align-self: center;
+
+    p{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/*PAGE 3*/
+
+ table, th, td {
+  border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+   font-size: 10pt;
+
+    th{
+        font-size: 9pt}
+}
+
+.code{
+    font-family: "Cascadia";
+    font-size: 9pt;
+
+}
+
+
+#chap1{
+    width: 100%;
+
+    pre{margin: 20px auto 0 auto;}
+
+    
+}
+
+#chap3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#chap2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    
+
+    figcaption{
+        margin: 0;
+    }
+
+    .logo{
+        align-self: end;
+    }
+
+    .container-1{
+        margin-bottom: 20px;
+
+
+    }
+}
+
+
+.warn{
+    border-style: solid;
+    align-self: center;
+    padding: 20px ;
+    margin-bottom: 20px;
+
+    p{font-size: 8pt;
+        margin: 0;
+        text-indent: 0;
+        }
+
+        .big{
+            font-size: 12pt;
+        }
+
+        ol{
+            padding: 0;
+        }
+    
+}
+
+#memo{
+    align-self: end;
+    width: 40%;
+}
+
+
+
+
+
+/* texte*/
+
+h1{
+    font-family: "Homoneta-rg";
+    font-size: 43pt;
+    line-height: 0;
+        position: absolute;
+    top: 3cm;
+
+    }
+
+h4{
+    font-family: "Homoneta-rg";
+    font-size: 16pt;
+    margin-bottom: 10px;
+    line-height: 0.9;
+}
+
+span{
+    font-style: italic;
+}
+
+p{
+    font-size: 10pt;
+    margin-bottom: 10px;
+    
+}
+
+ul, ol{
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+figcaption{
+    font-size: 8pt;
+
+    span{
+        font-family: "Lucette-it";
+    }
+}
+
+.logo{
+    font-family: "Lucette-it";
+        margin: 0;
+    position: absolute;
+}
+
+.big{
+        font-size: 24pt;
+        margin-top: 2cm;
+    }
+
+#byte{
+    font-size: 6.5pt;
+}
+
+#figtop{
+    margin-top: 55px;
+}
+
+.shadow-2{
+    background-color: black;
+    color: white;
+    font-family: "Cascadia";
+    width: fit-content;
+    font-size: 8pt;
+}
+
+.definition{
+    margin-left: 20px;
+}
+
+
+.casca{
+    font-family: "Cascadia";
+    font-size: 8pt;
+    margin-left: 20px;
+}
+
+.title{
+    margin-top: 15px;
+}
+
+.ascii{
+    pre{font-size: 2pt;}
+
+    margin-top: 20px;
+
+}
+
+
+/* IMAGES */
+.container-1{
+    width: 100%;
+}
+
+.container-2{
+    width: 50%;
+}
+
+.object-1{
+    object-fit:contain;
+    max-width: 100%;
+    max-height: 100%;
+    filter: grayscale(1);
+    }
+
+#bw{
+    filter: grayscale(1);
+    
+}
+
+
+#sub-h1{
+    font-size: 20pt;
+    top: 3.75cm;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+
+
+
+
+
+/*sous-partie*/
+.intro{
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    row-gap: 80px;
+
+}
+
+.context{
+    grid-area: c;
+
+    p{
+        margin-top: 20px;
+        margin-left: 20px;
+        text-indent: 1cm;
+    }
+
+}
+
+.sources{
+    ul{
+        font-size: 10pt;}
+   
+    width: 100%;
+}
+
+.logo-fin{
+    font-family: "Lucette-it";
+    	width: 3.5cm;
+
+}
+
+/*add*/
+
+h5{
+    font-family: "Lucette-it";
+    font-weight: lighter;
+}
+
+h6{
+    font-family: "Lucette-it";
+    font-weight: lighter;
+    margin-bottom: 5px;
+    font-size: 12pt;
+
+}
+
+a{
+    color: black;
+}
+
+.game{
+    border-style: solid; 
+    border-width: 2px;
+    padding: 2mm;
+
+    strong{
+            font-family: "Cascadia"; 
+            font-size: 9pt; 
+            font-weight: lighter;  }
+
+    h5{
+        margin-bottom: 5px;
+    }
+
+ }
+
+.ul-margin{
+    li{
+        margin-top: 5pt;
+    }
+}
+
+#window-choco{
+    font-size: 6pt; 
+    font-family: "Cascadia";
+}
+
+#chap-win{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    
+
+    figcaption{
+        margin: 0;
+    }
+
+    .logo{
+        align-self: end;
+    }
+
+    .container-1{
+        margin-bottom: 20px;
+
+
+    }
+}
+
+#chap-win2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+
+hr{
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.general-5{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;}
+
+#chap4{
+    width: 100%;
+    border-style:solid;
+    border-width: 1.5px;
+    padding:5px;
+    pre{margin: 10px auto 0 20px;
+
+    }  
+}
+
+#chap7{
+    width: 50%;
+    pre{margin: 10px auto 0 20px;}  
+}
+
+#cmd-img{
+    font-family: "cascadia";
+    font-size: 7pt; 
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#potato{
+    filter: grayscale(1);
+    width: 50%;
+}
+
+.lulu{
+    font-family:"Lucette-it";
+}
+
+#card{
+    width: 100%;
+    border: none;
+}
+
+#drawing{
+    font-size: 5pt;
+    align-self: end;
+
+}
+
+.pagefoot::before {
+  counter-increment: section;
+  content:counter(section);
+  font-size: 8pt;
+  }
+
+
+.pagefoot{
+  height: 3mm;
+  width: 100%;
+  text-align: center;
+  margin: 0;
+  justify-self:end;
+}
+
+.result{
+    font-size: 9pt;
+}
+
+
+.border{
+    border-style: solid;
+    padding: 2mm;
+    border-width: 1pt;
+}
+#chaise-long{
+    font-size: 6.5pt;
+}
+
+.general-6{
+    display: flex; 
+    flex-direction: column;
+    row-gap: 2cm;
+}
+
+}
+
+#zine4{
+.page{background-color: #58A3FF;}
+
+#sub-h1{
+    font-size: 20pt;
+    top: 3.75cm;
+    font-family: serif;
+    font-weight: lighter;
+}
+
+
+#zine-A{
+    background-color: #FF3C3C;
+    
+}
+
+#zine-0{
+    background-color: white;
+    
+}
+
+
+
+
+
+
+/*PAGE 1*/
+.general{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: 
+        "a a"
+        "b c";
+
+    z-index: 1;
+}
+
+.header{
+    grid-area: a;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    overlay: hidden;
+}
+
+
+pre{
+    font-size: 8.75pt;
+	position: static;
+}
+
+code{
+    font-size: 7.5pt;
+}
+
+/*PAGE 2*/
+
+.general-2{
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    row-gap: 40px;
+}
+
+.general-3{
+    display: flex;
+    flex-direction:  row;
+    justify-content: space-between;
+    column-gap: 20px;
+    height: 100%;
+    width: 100%;}
+
+.general-4{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:  row;
+    justify-content: center;}
+
+.schema{
+    height: 100%;
+    display: inline-block;}
+
+.shadow{
+    background-color: black;
+    color: white;
+    font-family: "Cascadia";
+    width: fit-content;
+    font-size: 12pt;
+}
+            /*MOTS*/
+            #shell{
+                position: absolute;
+                top: 412px;
+                left: 240px;}
+
+            #kernel{
+                position: absolute;
+                top: 520px;
+                left: 250px;}
+
+            #syscall{
+                position: absolute;
+                top: 450px;
+                left: 110px;}
+
+            #interpreter{
+                position: absolute;
+                top: 445px;
+                left: 300px;}
+
+#oval {
+    width: 50px;
+    height: 30px;
+    border-radius: 100px / 70px;
+    border-style: solid;
+    border-width: 1.5px;
+    position: absolute;
+    top: 175px;
+    left: 225px;
+  }
+
+.schema2{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+}
+
+#list-lg{
+    width: 250px;
+    align-self: center;
+
+    p{
+        margin-bottom: 20px;
+    }
+}
+
+
+
+
+/*PAGE 3*/
+
+ table, th, td {
+  border: 1px solid black;
+   border-collapse: collapse;
+   padding: 5px;
+   font-size: 10pt;
+
+    th{
+        font-size: 9pt}
+}
+
+.code{
+    font-family: "Cascadia";
+    font-size: 9pt;
+
+}
+
+
+#chap1{
+    width: 100%;
+
+    pre{margin: 20px auto 0 auto;}
+
+    
+}
+
+#chap2{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    
+
+    figcaption{
+        margin: 0;
+    }
+
+    .logo{
+        align-self: end;
+    }
+
+    .container-1{
+        margin-bottom: 20px;
+
+
+    }
+}
+
+
+.warn{
+    border-style: solid;
+    align-self: center;
+    padding: 20px ;
+    margin-bottom: 20px;
+
+    p{font-size: 8pt;
+        margin: 0;
+        text-indent: 0;
+        }
+
+        .big{
+            font-size: 12pt;
+        }
+
+        ol{
+            padding: 0;
+        }
+    
+}
+
+#memo{
+    align-self: end;
+    width: 40%;
+}
+
+
+
+
+
+/* texte*/
+
+h1{
+    font-family: "Homoneta-rg";
+    font-size: 43pt;
+    line-height: 0;
+        position: absolute;
+    top: 3cm;
+
+    }
+
+h4{
+    font-family: "Homoneta-rg";
+    font-size: 16pt;
+    margin-bottom: 15px;
+	line-height: 16pt;
+}
+
+span{
+    font-style: italic;
+}
+
+p{
+    font-size: 10pt;
+    margin-bottom: 10px;
+    
+}
+
+ul, ol{
+    font-size: 10pt;
+    margin-bottom: 10px;
+}
+
+figcaption{
+    font-size: 8pt;
+
+    span{
+        font-family: "Lucette-it";
+    }
+}
+
+.logo{
+    font-family: "Lucette-it";
+        margin: 0;
+    position: absolute;
+}
+
+.big{
+        font-size: 24pt;
+        margin-top: 2cm;
+    }
+
+#byte{
+    font-size: 6.5pt;
+}
+
+#figtop{
+    margin-top: 55px;
+}
+
+.shadow-2{
+    background-color: black;
+    color: white;
+    font-family: "Cascadia";
+    width: fit-content;
+    font-size: 8pt;
+}
+
+.definition{
+    margin-left: 20px;
+}
+
+
+.casca{
+    font-family: "Cascadia";
+    font-size: 8pt;
+    margin-left: 20px;
+}
+
+.title{
+    margin-top: 15px;
+}
+
+.ascii{
+    pre{font-size: 2pt;}
+
+    margin-top: 20px;
+
+}
+
+
+/* IMAGES */
+.container-1{
+    width: 100%;
+}
+
+.container-2{
+    width: 50%;
+}
+
+.object-1{
+    object-fit:contain;
+    max-width: 100%;
+    max-height: 100%;
+    }
+
+#bw{
+    filter: grayscale(1);
+    
+}
+
+#vim{
+    filter: grayscale(1);
+    margin-top: 30px;
+}
+
+
+
+
+
+
+/*sous-partie*/
+.intro{
+    grid-area: b;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    row-gap: 80px;
+
+}
+
+.context{
+    grid-area: c;
+
+    p{
+        margin-top: 20px;
+        margin-left: 20px;
+        text-indent: 1cm;
+    }
+
+}
+
+.sources{
+    ul{
+        font-size: 10pt;}
+   
+    width: 100%;
+}
+
+.logo-fin{
+    font-family: "Lucette-it";
+		width: 3.5cm;
+
+}
+
+/*add*/
+
+h5{
+    font-family: "Lucette-it";
+    font-weight: lighter;
+}
+
+a{
+    color: black;
+}
+
+.game{
+    border-style: solid; 
+    border-width: 2px;
+    padding: 2mm;
+
+    strong{
+            font-family: "Cascadia"; 
+            font-size: 9pt; 
+            font-weight: lighter;  }
+
+    h5{
+        margin-bottom: 5px;
+    }
+
+ }
+
+.ul-margin{
+    li{
+        margin-top: 5pt;
+    }
+}
+
+#window-choco{
+    font-size: 6pt; 
+    font-family: "Cascadia";
+}
+
+#chap-win{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    row-gap: 20px;
+    width: 100%;
+    margin-top: 30px;
+    
+
+    figcaption{
+        margin: 0;
+    }
+
+    .logo{
+        align-self: end;
+    }
+
+    .container-1{
+        margin-bottom: 20px;
+
+
+    }
+}
+
+hr{
+    border-color: black;
+    border-width: 1px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.general-5{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction:  column;
+    justify-content: space-between;}
+
+#chap4{
+    width: 100%;
+    border-style:solid;
+    border-width: 1.5px;
+    padding:5px;
+    pre{margin: 10px auto 0 20px;
+
+    }  
+}
+
+#chap7{
+    width: 50%;
+    pre{margin: 10px auto 0 20px;}  
+}
+
+#cmd-img{
+    font-family: "cascadia";
+    font-size: 7pt; 
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#potato{
+    filter: grayscale(1);
+    width: 50%;
+}
+
+.lulu{
+    font-family:"Lucette-it";
+}
+
+#card{
+    width: 100%;
+    border: none;
+}
+
+#drawing{
+    font-size: 5pt;
+    align-self: end;
+
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+@media print{
+
+	*{
+		visibility: hidden;}
+
+	.deplie{
+		.header{
+		visibility:visible;
+	}
+
+	}
+
+}
+
+.mobile{
+	display: none;
+}
+
+}
+
+@media only screen and (max-width: 600px) {
+
+  .volet{display: none;}
+  .sidebar{display: none;}
+  .openbutton{display: none;}
+
+  body{
+	background-color:  #FF3C3C;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	height: 100vh;
+
+  }
+.mobile{
+	align-self: center;
+	text-align: center;
+	padding: 2%;
+	h1{
+		font-family: "Homoneta";
+		font-size: 3em;
+		line-height: 0.85em;
+	}
+	
+	p{
+		font-family: Arial, Helvetica, sans-serif;
+	}
+
+}
+
+
+
+ 
+}

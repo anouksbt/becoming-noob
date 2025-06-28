@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#2 Becoming A Noob</title>
+    <link href="style-B.css" rel="stylesheet">
+</head>
+<body>
+
+
+<!--cover-->
+<section class="page">
+  <!--extra-->
+    <div class="general">
+      <!--header-->
+
+      <div class="header">
+       
+        <p class="logo">becomingnoob.com</p>
+       
+        <h1 id="second">#2 tran(OS)lations</h1>
+             <pre>
+      ||                                          || 
+      ||          ||              ||    ||               ||      
+||   ||          ||                         ||    ||    ||      ||    ||    ||    ||
+||   ||    ||          ||          ||          ||    ||      ||    ||          ||
+||   ||    ||    ||    ||    ||    ||    ||                  ||    ||    ||    ||
+||   ||                                                                              ||
+||                                                                                   ||
+||   ||                                                                              ||
+||   ||          ||                         
+||   ||    ||    ||    ||          ||    ||    ||    ||      ||    ||    ||    ||
+||   ||    ||    ||    ||    ||    ||    ||          ||    ||      ||    ||    ||    ||
+||   ||    ||    || a  || series   || of || zines    ||    ||    ||      ||    ||    ||
+||   ||    ||    ||    ||    ||    ||    ||    ||    ||    ||      ||    ||          ||
+|| inputs  ||     <--      ||      <--   ||       <--    ||      <--     ||  inputs  ||
+||         ||   hardwares  ||       OS   ||  softwares ||    users ||      ||
+|| outputs ||      -->     ||       -->  ||    -->     ||       -->  ||  outputs ||  ||
+||   ||    ||    ||    ||    ||    ||    ||    ||    ||    ||      ||
+||   ||    ||  the graphic designer practice deconstructed to its rawer shape    ||  ||
+        </pre>
+        <!--div id="oval"></div-->
+      </div>
+    
+
+
+      <!--image / illu-->
+      <div class="intro">
+        <div class="container-1">
+          <img class="object-1" id="bw" src="img/abstract.png"> </div>
+          <figcaption><span>programming languages' role explained by Wacky Science, in the "Computer Science" youtube video</span></figcaption> 
+      </div>
+      <!--context-->
+      <div class="context">
+          <p class="big">Welcome !</p>
+          <p>
+            In this quest of tracing back the mechanical process of a graphic design practice, we leave the hardwares behind to focus on the OS (Operating System). The core of the computer. 
+            <br>It is quite fascinating to realise that <strong>the OS holds the transition between software and hardware</strong> by its capacities to translate multiple computer languages.
+            In fact, to be able to speak as humans to the machine, our command has to go through <strong>various layers of translations</strong> back and forth in seconds.<br>
+            This second zine is an introduction to understand the back-end of the OS and the languages involved.
+          </p>
+      </div>
+
+    </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page2 the last layer of the software-->
+<section class="page">
+  <div class="general-3">
+    <div id="chap1">
+      <div>
+        <h4>#1 the Operating System</h4>
+        <p>
+          The Operating System (OS) serves as software that oversees a computer’s resources. It bridges the gap between hardwares and softwares / users in a computer. The most common ones are Linux, Windows and Mac. The OS works like the brain of the computer. It takes inputs from the users, and then coordinates the hardwares to achieve the actions. The OS code is stored on the hard-disk, in a binary form. Only Linux code is open-source.</p>
+
+          <p>
+          <strong>Virtual Terminal :</strong> A text-based interface which holds a space to welcome commands and pass them on to the shell. It takes input and display outputs. Unlike a graphical interface, the terminal provides direct access to the command line where users can perform tasks such as installing software, navigating directories, and editing files. It’s a powerful tool for executing commands, managing files, and controlling system processes.</p>
+
+          <p>
+          <strong>Shell :</strong> It is the outer-layer of the OS. It is the mediator between the end-user and the kernel. There are various shell the user can choose from like zsh, bash, Seashell and many more.  It parses the command written in the terminal (interface), and check if they are correct or not. If not it sends an error message back. If correct, it interprets the command and translate it to actions that the OS can execute. The shell itself does not convert source code to machine code. Instead, it often invokes interpreters or compilers that perform this task. </p>
+
+          <p>
+          <strong>Interpreter :</strong> Invoked by the shell, the computer program directly executes the instructions written in a programming or scripting language. The Interpreter transforms high level language code into assembly language or machine language. An interpreter translates into machine code the lines and executes them one by one directly.</p>
+        </p>
+      </div>
+    </div>
+
+    <div id="chap2">
+      <div>
+          <p>A compiler, does the same, as converting a high-level language input into a low-level language action. But the difference is that the compiler will first translate all the lines and then execute them. </p>
+          <p><strong>System calls :</strong> The interaction between the interpreter and the kernel occurs through system call (or API, Application Programming Interface). These calls allow the interpreter to request services from the kernel. For example, when a script needs to read a file or create a new process, it makes API calls that the kernel understands. These calls are typically written in C or another low-level language that interfaces directly with the kernel. System calls are the only entry points into the kernel system.</p>
+
+          <p><strong>Kernel :</strong> The inner-layer of the OS, or its core part. The kernel manages the system’s resources and facilitates communication between hardware and software components. t It is responsible to execute the command, by invoking the right OS libraries or devices drivers.</p> 
+      </div>
+
+      <div class="warn">
+        <p class="big"> how is a command executed ?</p>
+        <p>
+          <ol>
+            <li><strong>User input :</strong> the user types in the command in the terminal interface. Press enter. </li>
+            <li><strong>Shell parsing :</strong>  The shell parses the command, check if it is correct and if it can be directly executed or passed to an interpreter</li>
+            <li><strong>Interpreter Invocation</strong></li>
+            <li><strong>System calls :</strong> The interpreter executes the code, which may involve making system calls to the kernel to perform tasks. </li>
+            <li><strong>Kernel execution :</strong> The kernel processes these system calls, interacts with hardware, and manages system resources accordingly.</li>
+            <li><strong>Return values :</strong> The kernel sends results back to the interpreter, which may then output results to the shell or take further actions.</li>
+          </ol>
+        </p>
+
+      </div>
+    </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+
+<!--page3 OS schema-->
+<section class="page">
+  <div class="general-4">
+    <div class="container-1">
+      <img class="object-1" src="img/schema-OS.jpeg">
+    </div>
+  </div>
+  <div>
+      <p class="shadow" id="shell">SHELL</p>
+      <p class="shadow" id="kernel">KERNEL</p>
+      <p class="shadow" id="syscall">system <br>calls</p>
+      <p class="shadow" id="interpreter">interpreter</p>
+    </div>
+<div class="pagefoot"></div>
+</section>
+
+
+<!--page4 types of language-->
+<section class="page">
+  <div class="general-3">
+    <div id="chap1">
+        <h4>#2 types of languages</h4>
+        <p>A programming language is a way for users and developers to give instructions to the computer. It is based on a set of rules, syntax and words. The instructions, written in the programming language can make the computer perform tasks like changing an image size, scrapping content from a webpage, etc.</p>
+
+        <p><strong >High-level language (HLL) :</strong> are human-readable languages based on English syntaxes. They simplify coding by hiding complex hardwares details. Developers can focus on logic and functionnality. It becomes easier to develop and debug complex code.
+        HLL languages examples : Javascript, C++, Python, etc. </p>
+        <p><strong>Assembly language </strong> is a <strong >low-level programming language</strong> that helps to communicate directly with computer hardware. It uses <span>mnemonics✶</span> to represent the operations that a processor has to do. Which is an intermediate language between high-level languages like C++ and the binary language. It uses hexadecimal and binary values, and it is readable by humans. The computer requires an assembler to translate the Assembly language to machine level language. </p>
+        <p><strong>Machine language</strong> is a <strong >low-level programming language</strong> that is understood by computers. Machine language is made up of binary bits 0 and 1. Machine language is also known as machine codes or object code. As machine language consists of only 0 and 1, it is difficult to understand its raw form. Machine language cannot be understood by humans. The CPU processes this machine code as input. It is the only language the computer hardware can understand.✶✶ </p>
+        <figcaption id="figtop"><span>✶The last paragraph has been translated into binary code, on the right. </span></figcaption>
+
+    </div>
+
+    <div id="chap2">
+        <p id="byte"> 01001101 01100001 01100011 01101000 01101001 01101110 01100101 00100000 01101100 01100001 01101110 01100111 01110101 01100001 01100111 01100101 00100000 01101001 01110011 00100000 01100001 00100000 01101100 01101111 01110111 00101101 01101100 01100101 01110110 01100101 01101100 00100000 01110000 01110010 01101111 01100111 01110010 01100001 01101101 01101101 01101001 01101110 01100111 00100000 01101100 01100001 01101110 01100111 01110101 01100001 01100111 01100101 00100000 01110100 01101000 01100001 01110100 00100000 01101001 01110011 00100000 01110101 01101110 01100100 01100101 01110010 01110011 01110100 01101111 01101111 01100100 00100000 01100010 01111001 00100000 01100011 01101111 01101101 01110000 01110101 01110100 01100101 01110010 01110011 00101110 <strong class="shadow-2">Machine </strong> 00100000 01101100 01100001 01101110 01100111 01110101 01100001 01100111 01100101 00100000 01101001 01110011 00100000 01101101 01100001 01100100 01100101 00100000 01110101 01110000 00100000 01101111 01100110 00100000 01100010 01101001 01101110 01100001 01110010 01111001 00100000 01100010 01101001 01110100 01110011 00100000 00110000 00100000 01100001 01101110 01100100 00100000 00110001 00101110 00100000 01001101 01100001 01100011 01101000 01101001 01101110 01100101 00100000 01101100 01100001 01101110 01100111 01110101 01100001 01100111 01100101 00100000 01101001 01110011 00100000 01100001 01101100 01110011 01101111 00100000 01101011 01101110 01101111 01110111 01101110 00100000 01100001 01110011 00100000 01101101 01100001 01100011 01101000 01101001 01101110 01100101 00100000 01100011 01101111 01100100 01100101 01110011 00100000 01101111 01110010 00100000 01101111 01100010 01101010 01100101 01100011 01110100 00100000 01100011 01101111 01100100 01100101 00101110 00100000 01000001 01110011 00100000 01101101 01100001 01100011 01101000 01101001 01101110 01100101 00100000 01101100 01100001 01101110 01100111 01110101 01100001 01100111 01100101 00100000 01100011 01101111 01101110 01110011 01101001 01110011 01110100 01110011 00100000 01101111 01100110 00100000 01101111 01101110 01101100 01111001 00100000 00110000 00100000 01100001 01101110 01100100 00100000 00110001 00101100 00100000 01101001 01110100 00100000 01101001 01110011 00100000 01100100 01101001 01100110 01100110 01101001 01100011 01110101 01101100 01110100 00100000 01110100 01101111 00100000 01110101 01101110 01100100 01100101 01110010 01110011 01110100 01100001 01101110 01100100 00100000 01101001 01110100 01110011 00100000 01110010 01100001 01110111 00100000 01100110 01101111 01110010 01101101 00101110 00100000 01001101 01100001 01100011 01101000 01101001 01101110 01100101 00100000 01101100 01100001 01101110 01100111 01110101 01100001 01100111 01100101 00100000 01100011 01100001 01101110 01101110 01101111 01110100 00100000 01100010 01100101 00100000 01110101 01101110 01100100 01100101 01110010 01110011 01110100 01101111 01101111 01100100 00100000 01100010 01111001 00100000 01101000 01110101 01101101 01100001 01101110 01110011 00101110 00100000 01010100 01101000 01100101 00100000 01000011 01010000 01010101 00100000 01110000 01110010 01101111 01100011 01100101 01110011 01110011 01100101 01110011 00100000 01110100 01101000 01101001 01110011 00100000 01101101 01100001 01100011 01101000 01101001 01101110 01100101 00100000 01100011 01101111 01100100 01100101 00100000 01100001 01110011 00100000 01101001 01101110 01110000 01110101 01110100 00101110 00100000 01001001 01110100 00100000 01101001 01110011 00100000 01110100 01101000 01100101 00100000 01101111 01101110 01101100 01111001 <strong class="shadow-2">language </strong>00100000 01110100 01101000 01100101 00100000 01100011 01101111 01101101 01110000 01110101 01110100 01100101 01110010 00100000 01101000 01100001 01110010 01100100 01110111 01100001 01110010 01100101 00100000 01100011 01100001 01101110 00100000 01110101 01101110 01100100 01100101 01110010 01110011 01110100 01100001 01101110 01100100 00101110
+        </p>
+    <div>
+        
+      </div>
+    </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page5 illut language -->
+<section class="page">
+  <div class="general-2">
+    <div class="container-1">
+      <img class="object-1" id="bw" src="img/shema-1.png">
+    </div>
+    <div class="general-3">
+      <div>
+        <p><strong>From Python :</strong> <code>print("This a converter test. <br>From python to assembly language.")</code></p>
+        <p><strong>To Assembly Language :</strong></p>
+        <code><pre>
+  section .data
+  message db "This a converter test. <br>From python to assembly language.", 0
+
+  section .text
+      global _start
+
+  _start:
+      ; write the message to stdout
+      mov rax, 1          ; syscall: write
+      mov rdi, 1          ; file descriptor: stdout
+      mov rsi, message    ; pointer to message
+      mov rdx, 73         ; message length
+      syscall
+
+      ; exit the program
+      mov rax, 60         ; syscall: exit
+      xor rdi, rdi        ; exit code 0
+      syscall
+        </pre></code>
+      </div>
+      <div class="warn" id="memo">
+        <p class="big">✶ mnemonics</p>
+        <p>Mnemonics are memory aids that help individuals remember information more easily. In computer language, it often involves associating complex information with simpler, more memorable constructs, such as phrases, acronyms, rhymes, or visual imagery. For example :</p>
+        <p><strong>add</strong> = addition</p>
+        <p><strong>j</strong> = jump </p>
+        <p><strong>loads</strong> = lui </p>
+      </div>
+    </div>
+    </div>
+
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page7 illu -->
+<section class="page">
+   <div class="general-4">
+    <div class="container-1">
+      <img class="object-1" id="bw" src="img/code-schema-1.jpeg" >
+      
+    </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+<!--page6 translations-->
+<section class="page">
+  <div class="general-3">
+    <div id="chap1">
+    </div>
+    <div id="chap2">
+    </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+
+
+
+<!--page8 sources  -->
+<section class="page">
+  <div class="general-3">
+      <div class="sources">
+        <h4>sources</h4>
+          <ul>
+            <li><span>Basic Computer Hardware - Learn the Essentials,</span> by Robert Lanni, on the Lincoln Tech Blog, 2024</li>
+            <li><span>How the shell works internally when entering a command,</span> by Samuel A. Florez, on the Medium website, 2019</li>
+            <li><span>How Code Works: A Beginner’s Guide to the Journey from High-Level Languages to Machine Code</span> by Rishi, on the Medium website, 2024</li>
+            <li><span>What is machine language ? </span>on the Geeksforgeeks website, 2023</li>
+            <li><span>What is assembly language ? </span>on the Geeksforgeeks website, 2023</li>
+            <li><span>Introduction to compilers, </span>on the Geeksforgeeks website, 2025</li>
+            <li><span>Operating systems, </span>on the wikipedia website</li>
+            <li><span>Computer hardware, </span>on the wikipedia website</li>
+            <li><span>Code converter Python to Assembly Language, </span>on the Code Convert.ai website</li>
+            <li><span>Text to Binary Converter, </span>on the Rapidtables.com website</li>
+            <li><span>Organization of Computer Systems:§ 2: ISA, Machine Language, and Number Systems </span>, by M.S Schmalz, on the Cise.ufl website</li>
+            <li><span>Question on the relation between the shell and the kernel,</span>, answered by the bot assistant, on Quora website, 2024</li>
+            <li><span>Computer science explained in 17 minutes,</span> by Wacky Science, on its youtube channel, 2024 </li>
+          </ul>
+      </div>
+  </div>
+<div class="pagefoot"></div>
+</section>
+
+
+
+</body>
+
+<script>
+  window.alert("Hold CtrlP to export the pdf, to print it in a booklet format from your computer")
+</script>
+</html>
